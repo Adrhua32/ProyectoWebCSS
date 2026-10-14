@@ -51,10 +51,10 @@ header{
     color: var(--colorPrimario);
 }
 @media screen and (max-width: 1023px) {
-    header .menu{
+    .menu{
         flex-direction: column;
     }
-    header .menu__img-logo{
+    .menu__logo{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -69,7 +69,7 @@ header{
     .menu__enlaces{
         width: 100%;
         display: flex;
-        flex-direction: colum; 
+        flex-direction: column; 
     }
 
 }

@@ -71,5 +71,69 @@ header{
         display: flex;
         flex-direction: column; 
     }
-
 }
+/*inicio de baneer*/
+.mainbanner{
+    position:relative;
+    padding: 24em 14em;
+    /*background-color: var(--colorSecundario); */
+    background: linear-gradient(to right,yellow,red);
+    top: 61px;
+}
+.mainbanner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: var(--colorSecundario); */
+    mix-blend-mode: color;
+    opacity: .9;
+}
+.mainbanner__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .2;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    z-index: 20;
+    position: absolute;
+}
+.centrado{
+    display: block;
+    margin: auto;
+}
+.mainbanner__data{
+    text-align: center;
+    position: relative;
+}
+
+.mainbanner__titulo{
+    color: #fff;
+    font-family: "poppins";
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.mainbanner__parrafo{
+    color: #fff;
+    font-family: poppins;
+    font-size: 1.2em;
+}
+
+.mainbanner__boton2{
+        background-color: var(--colorPrimario);
+        color: #fff;
+        padding: 1em 1.2em;
+        border-radius: .8em;
+        text-decoration: none;
+        font-weight: 500;
+        font-family: "poppins";
+}
+/*fin de banner*/

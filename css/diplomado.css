@@ -208,3 +208,27 @@ header{
     font-family: "poppins";
     text-align: center;
 }
+/*inicio de foter*/
+footer{
+    background-color: var(--colorSombras);
+    color: #fff;
+    padding: 3em 0;
+}
+.iconos-pie{
+    font-size: 3em;
+}
+.iconos-pie:hover{
+    color: var(--colorPrimario);
+}
+.pie, .info{
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 1em;
+}
+.derechos{
+    background-color: var(--colorPrimario);
+    color: #fff;
+    font-family: "poppins";
+    padding: .5em 0;
+}
+/*fin de footer*/

@@ -1,0 +1,210 @@
+/* VARIABLES CSS */
+/* EL root es el selector padre */
+:root{
+    --colorPrimario: #ec111a;
+    --colorSecundario: #082BA5;
+    --colorTerciario: #007bdf;
+    --colorTitulos: #282d31;
+    --colorParrafos: #53575a;
+    --colorSombras: #282d31;
+    --colorBordes: #dfe0e0;
+}
+/* SELECTOR UNIVERSAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+header{
+    background-color: white ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 4px var(--colorSombras);
+}
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__img-logo{
+    height: 60px;
+}
+
+.menu__btn-menu{
+    display: none;
+}
+.menu__enlaces a{
+    font-family: "poppins";
+    padding: .7em;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--colorTitulos);
+}
+.menu__enlaces a:hover:a{
+    color: var(--colorPrimario);
+}
+@media screen and (max-width: 1023px) {
+    .menu{
+        flex-direction: column;
+    }
+    .menu__logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+    }
+    .menu__btn-menu{
+        display: block;
+        color: var(--colorPrimario);
+        font-size: 1.5em;
+    }
+    .menu__enlaces{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+}
+/*inicio de baneer*/
+.mainbanner{
+    position:relative;
+    padding: 24em 14em;
+    /*background-color: var(--colorSecundario); */
+    background: linear-gradient(to right,darkblue,blue);
+    top: 61px;
+}
+.mainbanner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: var(--colorSecundario); */
+    mix-blend-mode: color;
+    opacity: .9;
+}
+.mainbanner__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .2;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+    z-index: 20;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.centrado{
+    display: block;
+    margin: auto;
+}
+.mainbanner__data{
+    text-align: center;
+    position: relative;
+}
+
+.mainbanner__titulo{
+    color: #fff;
+    font-family: "poppins";
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.mainbanner__parrafo{
+    color: #fff;
+    font-family: poppins;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width:860px){
+    .mainbanner{
+        padding: 6em 4em;
+    }
+    .mainbanner__boton2{
+        display: block;
+        margin-bottom: 1em;
+    }
+    .mainbanner__data{
+        text-align: center;
+        margin: auto;
+    }
+    .mainbanner__titulo{
+        font-size: 2em;
+    }
+    .mainbanner__parrafo{
+        font-size: 1em;
+    }
+}
+/*fin de banner*/
+
+
+/*inicio de cards*/
+.cards__grid{
+    display: grid;
+    gap: 1.5    em;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.card{
+    background-color: azure;
+    border-radius: 1.5;
+    border: 1px solid var(--colorBordes)
+    box-shadow 0 4px 6px var(var(--colorSombras))
+}
+.card__img img{
+    max-width: 100%;
+    border-radius: 1em 1em;
+}
+.card__content{
+    padding: 1em;
+}
+.card__content a{
+    text-decoration: none;
+}
+.card__title{
+    font-family: "poppins";
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+    color: var(--colorTitulos);
+    text-transform: uppercase;
+}
+.card__info{
+    background-color: var(--colorTerciario);
+    color:#fff;
+    font-size: 1em;
+    padding: 1em;
+    margin-top: 4em;
+    display: block;
+    border-radius: 1em;
+    text-align: center; 
+    font-family: "poppins";
+    transition: background-color .5s ease-in-out;
+
+}
+.card__info:hover{
+    background-color: var(--colorSecundario);
+    color:#fff
+}
+/*fin de cards*/
+.titulo__centrar{
+    font-family: "poppins";
+    text-align: center;
+}

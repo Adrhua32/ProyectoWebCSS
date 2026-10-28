@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja Huancayo - Login</title>
+    <link rel="stylesheet" href="css/login2.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    
+
+    <div class="container">
+
+        <div class="left-side">
+            <img src="img/huancayo.jpg" alt="Plaza Huancayo" class="bg-image">
+        </div>
+
+        <div class="right-side">
+            <div class="login-box">
+                
+                <div class="logo-area">
+
+                    <div class="logo-icon-container">
+                        <div class="logo-bar"></div>
+                        <div class="logo-text">Caja Huancayo</div>
+                    </div>
+                </div>
+
+                <h2 class="welcome-title">Bienvenido Colaborador</h2>
+                <p class="instruction-text">Ingrese sus credenciales</p>
+
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Usuario" required>
+                        <i class="fa-regular fa-user icon"></i>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" placeholder="Contraseña" required>
+                        <i class="fa-regular fa-eye-slash icon"></i>
+                    </div>
+
+                    <div class="options-row">
+                        <label class="switch-container">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                            <span class="switch-label">Recordar usuario</span>
+                        </label>
+                        <a href="#" class="forgot-link">¿Olvidó sus credenciales?</a>
+                    </div>
+
+                    <div class="recaptcha-container">
+                        <div class="recaptcha-left">
+                            <input type="checkbox" id="robot-check">
+                            <label for="robot-check">No soy un robot</label>
+                        </div>
+                        <div class="recaptcha-right">
+                            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" class="recaptcha-img">
+                            <span>reCAPTCHA</span>
+                            <small>Privacy - Terms</small>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-ingresar">Ingresar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
